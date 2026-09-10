@@ -104,17 +104,6 @@ docs/
 figures/                                      # key result figures (used above)
 ```
 
-## Selected references
-
-- Pacanowski & Philander (1981), *JPO* — Richardson-number vertical mixing.
-- Large, McWilliams & Doney (1994), *Rev. Geophys.* — KPP.
-- Gent & McWilliams (1990), *JPO* — mesoscale eddy parameterization.
-- Rasp, Pritchard & Gentine (2018), *PNAS* — deep learning for subgrid processes.
-- Bolton & Zanna (2019), *JAMES* — deep learning for ocean subgrid parameterization.
-- Kochkov et al. (2024), *Nature* — NeuralGCM, differentiable hybrid modelling.
-- Talagrand & Courtier (1987), *QJRMS* — 4D-Var with the adjoint.
-- Wunsch & Heimbach (2007), *Physica D* — ECCO ocean state estimation.
-- Mazloff, Heimbach & Wunsch (2010), *JPO* — SOSE.
 
 ## Author
 
