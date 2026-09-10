@@ -67,43 +67,6 @@ against finite differences to ~1e-9) providing the gradient for L-BFGS.
 
 ![4D-Var analysis](figures/fourdvar_analysis.png)
 
-## Background notes
-
-- [`docs/parameterization_closure_notes.md`](docs/parameterization_closure_notes.md) —
-  the closure problem from Reynolds averaging up; the taxonomy of ocean mixing schemes
-  (constant background, PP81, KPP, convective adjustment, tidal mixing, Laplacian /
-  biharmonic / Smagorinsky lateral mixing, GM+Redi, boundary bulk formulae) with MITgcm as
-  the running example; and the spectrum of physics↔ML model designs, from traditional NWP
-  through learned-physics hybrids (NeuralGCM) to pure-ML forecasters (GraphCast, AIFS).
-- [`docs/fourdvar_notes.md`](docs/fourdvar_notes.md) — 4D-Var from the cost function to
-  the adjoint, with the full derivation behind notebook 03: the finite-difference scheme,
-  the backward sweep, why adjoint = backpropagation, and parameter estimation.
-
-## Quickstart
-
-```bash
-git clone https://github.com/<your-username>/physics-ml-hybrid-modeling.git
-cd physics-ml-hybrid-modeling
-pip install -r requirements.txt
-jupyter lab notebooks/
-```
-
-All notebooks are committed with executed outputs, so they can also just be read on
-GitHub.
-
-## Repository structure
-
-```
-notebooks/
-  01_hybrid_parameterization_pendulum.ipynb   # closure problem + 4-way model comparison
-  02_ocean_mixing_learned_closure.ipynb       # NN eddy-viscosity closure in an ocean column
-  03_fourdvar_advection_diffusion.ipynb       # 4D-Var twin experiment with adjoint
-docs/
-  parameterization_closure_notes.md           # theory: closures, mixing schemes, hybrid designs
-  fourdvar_notes.md                           # theory: 4D-Var, adjoints, state estimation
-figures/                                      # key result figures (used above)
-```
-
 
 ## Author
 
